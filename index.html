@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Our Pricing Plans</h1>
+    <p class="subtitle">Choose the best plan for your needs</p>
+
+    <div class="toggle">
+        <button id="monthly" class="active"
+            onclick="changePlan('monthly')">Monthly</button>
+
+        <button id="yearly"
+            onclick="changePlan('yearly')">Yearly</button>
+    </div>
+
+    <div class="pricing-cards">
+
+        <div class="card">
+            <h2>Basic Plan</h2>
+            <div class="price">
+                $<span class="amount" data-monthly="10"
+                data-yearly="100">10</span>
+                <span class="period">/month</span>
+            </div>
+
+            <ul>
+                <li>5 Projects</li>
+                <li>10 GB Storage</li>
+                <li>Email Support</li>
+                <li>Basic Features</li>
+            </ul>
+
+            <button onclick="selectPlan('Basic')">
+                Choose Plan
+            </button>
+        </div>
+
+        <div class="card popular">
+            <div class="popular-label">Most Popular</div>
+            <h2>Pro Plan</h2>
+
+            <div class="price">
+                $<span class="amount" data-monthly="25"
+                data-yearly="250">25</span>
+                <span class="period">/month</span>
+            </div>
+
+            <ul>
+                <li>20 Projects</li>
+                <li>50 GB Storage</li>
+                <li>Priority Support</li>
+                <li>Advanced Features</li>
+            </ul>
+
+            <button onclick="selectPlan('Pro')">
+                Choose Plan
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Premium Plan</h2>
+
+            <div class="price">
+                $<span class="amount" data-monthly="50"
+                data-yearly="500">50</span>
+                <span class="period">/month</span>
+            </div>
+
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>100 GB Storage</li>
+                <li>24/7 Support</li>
+                <li>All Premium Features</li>
+            </ul>
+
+            <button onclick="selectPlan('Premium')">
+                Choose Plan
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
